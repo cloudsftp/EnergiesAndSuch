@@ -15,14 +15,14 @@ body {
     align-items: center;
     gap: 4em;
 
-    // border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .heading {
     width: 40%;
     max-width: fit-content;
 
-    // border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .sub-heading {
@@ -32,5 +32,5 @@ body {
     font-family: sans-serif;
     font-weight: 200;
 
-    // border: 2px solid green;
+    /* border: 2px solid green; */
 }
