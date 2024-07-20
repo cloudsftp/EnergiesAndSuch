@@ -1,9 +1,6 @@
 body {
     background-color: #181a1b;
     color: #e8e6e3;
-
-    width: 99vw;
-    height: 98vh;
 }
 
 .center {
@@ -23,8 +20,8 @@ body {
 
 @media screen and (max-aspect-ratio: 13/20) {
     body {
-        width: 99vw;
-        height: 98vh;
+        width: 98vw;
+        height: 97vh;
     }
 
     .center {
@@ -49,6 +46,11 @@ body {
 }
 
 @media screen and (min-aspect-ratio: 13/20) {
+    body {
+        width: 99vw;
+        height: 98vh;
+    }
+
     .center {
         flex-direction: column;
         gap: 4em;
