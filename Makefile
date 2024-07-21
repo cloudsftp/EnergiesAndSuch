@@ -6,10 +6,10 @@
 
 current_dir = $(shell pwd)
 
-static: static/title.svg
+static: static/img/title.svg
 
-static/%.svg: title/%.svg
-	cp $< $@
+static/img/%.svg: title/%.svg
+	mv $< $@
 
 %.svg: %.typ
 	typst compile --font-path fonts $< $@
