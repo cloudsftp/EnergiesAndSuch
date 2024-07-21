@@ -6,10 +6,14 @@
 
 current_dir = $(shell pwd)
 
-static: title/title.svg
+static: static/title.svg
 
-%.svg: %.typ fonts/*
+static/%.svg: title/%.svg
+	cp $< $@
+
+%.svg: %.typ
 	typst compile --font-path fonts $< $@
+	inkscape --actions "select-all;fit-canvas-to-selection" --export-overwrite $@
 
 .PHONY: dep
 dep:
