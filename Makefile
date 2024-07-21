@@ -6,10 +6,10 @@
 
 current_dir = $(shell pwd)
 
-static: title/title.png
+static: title/title.svg
 
-%.png: %.eps fonts/*
-	gs -dSAFER -dEPSCrop -r600 -sFONTMAP=${current_dir}/fonts/Fontmap.GS -sDEVICE=pngalpha -o $@ $<
+%.svg: %.typ fonts/*
+	typst compile --font-path fonts $< $@
 
 .PHONY: dep
 dep:
@@ -17,7 +17,7 @@ dep:
 
 .PHONY: clean
 clean:
-	rm title/*.png
+	rm title/*.svg
 	rm fonts/*.ttf
 
 # end
