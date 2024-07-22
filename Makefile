@@ -6,9 +6,9 @@
 
 current_dir = $(shell pwd)
 
-static: static/img/title.svg static/img/title-vertical.svg
+static: static/img/title.svg static/img/title-vertical.svg static/img/favicon.svg
 
-static/img/%.svg: title/%.svg
+static/img/%.svg: img-src/%.svg
 	mv $< $@
 
 %.svg: %.typ
