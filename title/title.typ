@@ -1,7 +1,3 @@
-#text(font: "NotoSansJP", size: 4em, fill: white)[
-活
-力
-と
-か
-相
+#text(font: "NotoSansJP", size: 4em, fill: white, tracking: 0.2em)[
+    活力とか相
 ]
