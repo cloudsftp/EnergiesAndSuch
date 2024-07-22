@@ -26,24 +26,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup typst
-        uses: typst-community/setup-typst@v3
-      - name: Install inkscape
-        run: |
-          sudo apt update
-          sudo apt install inkscape
+#      - name: Setup typst
+#        uses: typst-community/setup-typst@v3
+#      - name: Install inkscape
+#        run: |
+#          sudo apt update
+#          sudo apt install inkscape
 
-      - name: Cache fonts
-        id: cache-fonts
-        uses: actions/cache@v4
-        with:
-          path: fonts
-          key: ${{ runner.os }}-fonts
-      - name: Download dependencies
-        run: make dep
+#      - name: Cache fonts
+#        id: cache-fonts
+#        uses: actions/cache@v4
+#        with:
+#          path: fonts
+#          key: ${{ runner.os }}-fonts
+#      - name: Download dependencies
+#        run: make dep
 
-      - name: Build
-        run: make -B
+#      - name: Build
+#        run: make -B
 
       - name: Setup Pages
         id: pages
