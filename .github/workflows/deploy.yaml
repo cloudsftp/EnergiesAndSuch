@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - latest
+      - workflow
 
 permissions:
   contents: read
@@ -19,14 +20,22 @@ defaults:
     shell: bash
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup typst
+        uses: typst-community/setup-typst@v3
+      - name: Install  inkscape
+        run: sudo apt install inkscape
+
+      - name: Download dependencies
+        run: make dep
+      - name: Build
+        run: make -B
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
@@ -34,6 +43,14 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./static
+
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

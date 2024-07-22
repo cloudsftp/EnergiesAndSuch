@@ -15,7 +15,7 @@ static/img/%.svg: title/%.svg
 	typst compile --font-path fonts $< $@
 	inkscape --actions "select-all;fit-canvas-to-selection" --export-overwrite $@
 
-open_sans_japanese_download = "https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFM8k75vY0rw-oME.ttf"
+open_sans_japanese_download = "https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFCMj75vY0rw-oME.ttf"
 open_sans_japanese_file = "fonts/noto-sans-jp.ttf"
 
 .PHONY: dep
