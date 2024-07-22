@@ -20,8 +20,8 @@ body {
 
 @media screen and (max-aspect-ratio: 13/20) {
     body {
-        width: 98vw;
-        height: 97vh;
+        width: 97vw;
+        height: 95vh;
     }
 
     .center {
@@ -52,6 +52,8 @@ body {
     }
 
     .center {
+        height: 90%;
+
         flex-direction: column;
         gap: 4em;
     }
