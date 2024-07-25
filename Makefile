@@ -6,7 +6,12 @@
 
 current_dir = $(shell pwd)
 
-static: static/img/title.svg static/img/title-vertical.svg static/img/favicon.svg
+images = 	static/img/title.svg \
+			static/img/title-vertical.svg \
+			static/img/favicon.svg \
+#			static/img/apple-touch-icon.png
+
+static: ${images}
 
 static/img/%.svg: img-src/%.svg
 	mv $< $@
