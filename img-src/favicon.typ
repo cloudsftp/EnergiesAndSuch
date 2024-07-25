@@ -1,3 +1,3 @@
-#text(font: "NotoSansJP", size: 4em, fill: white)[
+#text(font: "Noto Sans JP", size: 4em, fill: white)[
     活
 ]
