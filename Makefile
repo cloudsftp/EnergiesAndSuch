@@ -11,6 +11,9 @@ images = 	static/img/title.svg \
 			static/img/favicon.svg \
 			static/img/apple-touch-icon.png
 
+background_color = \#181a1b
+text_color = \#e8e6e3
+
 static: $(images)
 
 static/img/%.svg: img-src/%.svg
@@ -19,10 +22,14 @@ static/img/%.svg: img-src/%.svg
 %.svg: %.typ
 	typst compile --font-path fonts $< $@
 	inkscape --actions "select-all;fit-canvas-to-selection" --export-overwrite $@
-	sed -i 's/fill="#ffffff"/fill="#e8e6e3"/' $@
+	sed -i 's/fill="#ffffff"/fill="$(text_color)"/' $@
 
 static/img/apple-touch-icon.png: static/img/favicon.svg
-	inkscape -w 512 -h 512 -b "#181a1b" $< -o $@
+	inkscape 	--export-width 512 \
+				--export-height 512 \
+				--export-background "$(background_color)" \
+				$< -o $@
+	magick $@ -bordercolor "$(background_color)" -border 50 $@
 
 open_sans_japanese_download = "https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFCMj75vY0rw-oME.ttf"
 open_sans_japanese_file = "fonts/noto-sans-jp.ttf"
