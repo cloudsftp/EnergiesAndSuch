@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Noto Sans JP - Energies and Such Subset";
+    src: url("noto-sans-jp-subset.ttf");
+}
+
 body {
     background-color: #181a1b;
     color: #e8e6e3;
@@ -12,9 +17,14 @@ body {
     align-items: center;
 }
 
+.heading {
+    font-size: 9em;
+    font-family: "Noto Sans JP - Energies and Such Subset";
+}
+
 .sub-heading {
     font-size: 2em;
-    font-family: sans-serif;
+    font-family: "sans serif";
     font-weight: 200;
 }
 
@@ -29,12 +39,11 @@ body {
         gap: 0.2em;
     }
 
-    .heading-wrapper {
-        height: 80%;
-    }
-
     .heading {
-        height: 100%;
+        height: 80%;
+
+        font-size: 6em;
+        writing-mode: vertical-lr;
     }
 
     .sub-heading {
@@ -57,21 +66,4 @@ body {
         flex-direction: column;
         gap: 4em;
     }
-
-    .heading-wrapper {
-        width: 40%;
-    }
-
-    .heading {
-        width: 100%;
-    }
-}
-
-@font-face {
-    font-family: "Noto Sans JP Subset";
-    src: url("noto-sans-jp-subset.ttf");
-}
-
-.test-local-font {
-    font-family: "Noto Sans JP Subset";
 }

@@ -44,6 +44,7 @@ static/img/apple-touch-icon.png: img-src/apple-touch-icon.svg
 static/noto-sans-jp-subset.ttf: fonts/noto-sans-jp.ttf fonts/subset-characters
 	pyftsubset $< \
 		--output-file=$@ \
+		--obfuscate-names \
 		--text-file=$(word 2,$^)
 
 open_sans_japanese_download = "https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFCMj75vY0rw-oME.ttf"
