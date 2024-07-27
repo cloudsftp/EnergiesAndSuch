@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   class="typst-doc"
+   viewBox="0 0 40.568002 40.700001"
+   width="40.568001pt"
+   height="40.700001pt"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="favicon-dark.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt" />
+  <g
+     id="g3"
+     transform="translate(-72.58225,-66.07025)">
+    <g
+       transform="translate(70.86625,103.11825)"
+       id="g2">
+      <g
+         class="typst-text"
+         transform="scale(1,-1)"
+         id="g1">
+        <use
+           xlink:href="#gC56BA1DAA5FF626599A31C4B437BB647"
+           x="0"
+           fill="#ffffff"
+           id="use1" />
+      </g>
+    </g>
+  </g>
+  <defs
+     id="glyph">
+    <symbol
+       id="gC56BA1DAA5FF626599A31C4B437BB647"
+       overflow="visible">
+      <path
+         d="m 17.248,13.728 h 22.44 V -3.476 h -3.96 V 9.944 H 21.076 V -3.652 h -3.828 z m 20.02,23.32 3.212,-3.256 q -3.08,-1.1 -6.974,-1.958 -3.894,-0.858 -8.074,-1.43 -4.18,-0.572 -8.052,-0.924 -0.132,0.748 -0.506,1.804 Q 16.5,32.34 16.148,33 q 2.86,0.308 5.808,0.725998 2.948,0.418002 5.764,0.924002 2.816,0.506 5.258,1.1 2.442,0.593998 4.29,1.298 z M 26.576,32.736 h 3.96 V 11.528 h -3.96 z M 14.256,24.288 H 42.284 V 20.284 H 14.256 Z M 19.932,1.98 H 37.444 V -1.804 H 19.932 Z M 3.828,33.616 6.204,36.564 q 1.276,-0.572 2.838,-1.408 1.562,-0.836 3.014,-1.628 1.452,-0.792 2.376,-1.452 l -2.42,-3.344 q -0.924,0.66 -2.332,1.518 -1.408,0.858 -2.948,1.76 -1.54,0.902 -2.904,1.606 z M 1.716,21.472 4.004,24.508 q 1.2759997,-0.572 2.816,-1.386 1.54,-0.814 3.014,-1.584 1.474,-0.77 2.398,-1.43 L 9.9,16.676 Q 9.0199995,17.336 7.59,18.171999 6.16,19.008 4.598,19.888 3.036,20.768 1.716,21.472 Z m 0.88,-21.824 q 1.188,1.6719999 2.64,4.004 1.4519997,2.332 2.948,4.95 1.496,2.618 2.772,5.126 l 3.036,-2.772 Q 12.848,8.668 11.506,6.182 10.164,3.696 8.8,1.3199999 7.436,-1.056 6.072,-3.168 Z"
+         id="path3" />
+    </symbol>
+  </defs>
+</svg>
