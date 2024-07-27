@@ -66,3 +66,12 @@ body {
         width: 100%;
     }
 }
+
+@font-face {
+    font-family: "Noto Sans JP Subset";
+    src: url("noto-sans-jp-subset.ttf");
+}
+
+.test-local-font {
+    font-family: "Noto Sans JP Subset";
+}

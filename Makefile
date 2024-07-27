@@ -14,7 +14,7 @@ images = 	static/img/title.svg \
 
 text_color = \#e8e6e3
 
-static: $(images)
+static: $(images) static/noto-sans-jp-subset.ttf
 
 static/img/%.svg: img-src/%.svg
 	mv $< $@
@@ -38,6 +38,13 @@ static/img/apple-touch-icon.png: img-src/apple-touch-icon.svg
 				--export-height 512 \
 				$< -o $@
 	magick $@ -border 50 $@
+
+# Fonts
+
+static/noto-sans-jp-subset.ttf: fonts/noto-sans-jp.ttf fonts/subset-characters
+	pyftsubset $< \
+		--output-file=$@ \
+		--text-file=$(word 2,$^)
 
 open_sans_japanese_download = "https://fonts.gstatic.com/s/notosansjp/v52/-F6jfjtqLzI2JPCgQBnw7HFyzSD-AsregP8VFCMj75vY0rw-oME.ttf"
 open_sans_japanese_file = "fonts/noto-sans-jp.ttf"
