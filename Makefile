@@ -33,7 +33,7 @@ static/img/%.svg: img-src/%.svg
 	inkscape --actions "select-all;fit-canvas-to-selection" --export-overwrite $@
 	sed -i 's/fill="#ffffff"/fill="$(text_color)"/' $@
 
-static/img/apple-touch-icon.png: static/img/apple-touch-icon.svg
+static/img/apple-touch-icon.png: img-src/apple-touch-icon.svg
 	inkscape 	--export-width 512 \
 				--export-height 512 \
 				$< -o $@
